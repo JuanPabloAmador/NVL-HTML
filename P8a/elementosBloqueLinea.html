@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <meta charset="UTF-8">
+    <title>Elementos en bloque y elementos en linea</title>
+</head>
+
+<body>
+    <header>
+        <h1>Elementos en bloque y elementos en linea</h1>
+    </header>
+
+    <p>A continuación vamos a utilizar una serie de elementos en bloque y en linea anidados.</p>
+
+    <h2>Elementos de bloque anidados en otros elementos de bloque</h2>
+
+    <p style="color: brown">Las 3 siguientes etiquetas hX pertenecen a éste mismo parrafo.
+        <h1 style="color: brown">Etiqueta h1</h1>
+        <h2 style="color: brown">Etiqueta h2</h2>
+        <h3 style="color: brown">Etiqueta h3...</h3>
+    </p>
+    <p>Sin embargo como vemos al añadir etiquetas de tipo bloque (h1 h2 h3 ...), estas han creado su propio salto de
+        página, por lo que
+        los titulos creados con las etiquetas hX no aparecen en linea con el texto del párrafo. </p>
+
+    Lo mismo ocurre al crear una lista tanto de objetos ordenados como desordenados (tags: ol ul)
+
+    <ol>Esto es una lista
+        <li>Este es un elemento li (list item) que al ser un bloque también crea un salto de parrafo</li>
+        <li>Este es un segundo elemento li</li>
+        <li>Este es un tercer elemento li </li>
+    </ol>
+    <p>Como vemos el texto "Esto es una lista" aparece por encima de los elementos li, esto se debe a que dicho texto
+        esta dentro de la etiqueta ol, y al crear un nuevo elemento de bloque dentro del elemento ol se crea un salto de
+        parrafo</p>
+
+    <h2>Elementos en linea anidados a elementos de bloque</h2>
+
+    <p>Este es un parrafo con imagenes <img src="imagenes/imagenPrueba.png" width="100px"
+            alt="Diagrama de ordenador leyento html"></p>
+    <p>Por otro lado como vemos el parrafo anterior contiene una imagen, un elemento en linea, por lo que al usarlo no
+        se crea un salto de página automático sino que la imagen aparece en la misma linea que el texto del parrafo.</p>
+    <p>También es habitual utilizar el elemento en linea de enlaces, <a href="#">Ésto es un enlace</a> que como podemos
+        ver también se situa en linea con el texto del parrafo.</p>
+
+    <a href="#">Esto es un segundo enlace <p>Ahora está etiqueta de parrafo está dentro de una etiqueta del enlace "Esto es un segundo
+            enlace" y como podemos ver, al crear una etiqueta de parrafo dentro del elemento en linea, se creo un salto
+            de parrafo, aunque sigue conservando su capacidad de ser un enlace.</p></a>
+
+</body>
+
+</html>
